@@ -1,0 +1,125 @@
+{# vim: set sts=2 sw=2 ts=2 et: #}
+{% extends "base.html" %}
+{% set active_page = "people" %}
+
+{% block title %}
+CubeWorks :: People
+{% endblock %}
+
+{% block body %}
+
+{% include "navbar.html" %}
+
+<div class="container">
+  <div class="jumbotron">
+    <h2>About CubeWorks</h2>
+    <p>
+    CubeWorks was founded in 2013 to make next-generation millimeter-scale
+    computing available today. The company's origins come from the Michigan
+    Micro Mote (M3) intiative, a project from the University of Michigan
+    seeking to push the frontiers of computing.
+    </p>
+  </div>
+
+  <div class="row top-buffer">
+    <div class="col-lg-6">
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="/static/img/zhiyoong-square.png" width="140px" />
+        </div>
+        <div class="col-lg-8">
+          <h2>ZhiYoong Foo</h2>
+          <h3>CEO, Co-Founder</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="/static/img/gyouho-square.jpg" width="140px" />
+        </div>
+        <div class="col-lg-8">
+          <h2>Gyouho Kim</h2>
+          <h3>CTO, Co-Founder</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row top-buffer">
+    <div class="col-lg-6">
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="140px" />
+        </div>
+        <div class="col-lg-8">
+          <h2>Yejoong Kim</h2>
+          <h3>CRO</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="/static/img/pannuto-square.jpg" width="140px" />
+        </div>
+        <div class="col-lg-8">
+          <h2>Pat Pannuto</h2>
+          <h3>Principal Systems Architect</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <h2>Advisory Board</h2>
+  <div class="row top-buffer">
+    <div class="col-lg-6">
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="/static/img/blaauw-square.jpg" width="140px" />
+        </div>
+        <div class="col-lg-8">
+          <h2>David Blaauw</h2>
+          <h3>Principal Adivsor, Co-Founder</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="/static/img/dennis-square.jpg" width="140px" />
+        </div>
+        <div class="col-lg-8">
+          <h2>Dennis Sylvester</h2>
+          <h3>Title?</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row top-buffer">
+    <div class="col-lg-6">
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="/static/img/wentzloff-square.jpg" width="140px" />
+        </div>
+        <div class="col-lg-8">
+          <h2>David Wentzloff</h2>
+          <h3>Title?</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="/static/img/prabal-square.jpg" width="140px" />
+        </div>
+        <div class="col-lg-8">
+          <h2>Prabal Dutta</h2>
+          <h3>Title?</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+

@@ -7,9 +7,18 @@ body {
   color: #5a5a5a;
 }
 
-.container {
+.index-container {
   width: 100%;
   padding: 0px 15vw;
+}
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+.top-buffer {
+  margin-top: 20px;
 }
 
 .top-box {
