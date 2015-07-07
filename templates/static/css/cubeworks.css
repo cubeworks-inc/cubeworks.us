@@ -62,6 +62,10 @@ div.invert-color span
   filter: invert(100%);
 }
 
+#logo-header {
+  width: 100%;
+}
+
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -209,11 +213,19 @@ div.invert-color span
   h1 {
     font-size: 50px;
   }
+
+  #logo-header {
+    padding: 0 10vw;
+  }
 }
 
 @media (min-width: 992px) {
   .featurette-heading {
     margin-top: 120px;
+  }
+
+  #logo-header {
+    padding: 0 30vw;
   }
 }
 
