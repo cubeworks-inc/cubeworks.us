@@ -1,0 +1,222 @@
+{# vim: set sts=2 sw=2 ts=2 et: #}
+{% extends "base.html" %}
+
+{% block title %}
+CubeWorks
+{% endblock %}
+
+{% block body %}
+
+{#
+<div class="navbar-wrapper">
+  <div class="container">
+
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+</div>
+#}
+
+
+{#
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img class="first-slide" src="/static/img/logo-header.png" alt="CubeWorks logo as a header">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>CubeWorks. World's Smallest Computers.</h1>
+          <p>Possible sub-heading text?</p>
+          <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Another example headline.</h1>
+          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>One more for good measure.</h1>
+          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div><!-- /.carousel -->
+#}
+
+{#
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img class="first-slide" src="/static/img/logo-header.png" alt="CubeWorks logo as a header" />
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>CubeWorks. World's Smallest Computers.</h1>
+          <p>Possible sub-heading text?</p>
+          <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+#}
+
+<div class="top-box">
+  <img style="width:100%;" src="/static/img/logo-header.png" alt="CubeWorks logo as a header" />
+  <h1>World's Smallest Computers.</h1>
+</div>
+
+<div class="container marketing">
+  <div class="row qube">
+    <div class="col-lg-4 col-xs-4">
+      <img class="img-circle" src="/static/img/imager-crop.jpg" alt="Picture of Imager Qube">
+      <h2>Imaging Qube</h2>
+    </div>
+    <div class="col-lg-4 col-xs-4">
+      <img class="img-circle" src="/static/img/pressure-crop.jpg" alt="Picture of Pressure Qube">
+      <h2>Pressure Qube</h2>
+    </div>
+    <div class="col-lg-4 col-xs-4">
+      <img class="img-circle" src="/static/img/temperature-crop.jpg" alt="Picture of Temperature Qube">
+      <h2>Temperature Qube</h2>
+    </div>
+  </div><!-- /.row -->
+
+
+  <!-- START THE FEATURETTES -->
+
+  <hr class="featurette-divider">
+
+  <div class="fade-out">
+    <div class="row featurette invert-color" style="padding-right: 0px;"> {# Avoid padding at edge of image #}
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Millimeter-Scale Computing. <span class="text-muted">Real-life smart dust.</span></h2>
+        <p class="lead">
+        The Cubisens platform by CubeWorks enables the first truly autonomous
+        wireless sensing platform measuring less than a millimeter. Cubisens
+        systems sense and process their environment, wirelessly transmitting
+        results or storing them for later collection.  The versaltility of the
+        Cubisens platform allows multiple units to be combined together to tackle
+        bigger monitoring and sensing applications.
+        </p>
+      </div>
+      <div class="col-md-5" style="padding-right: 0px;"> {# Avoid padding edge of image #}
+        <img class="featurette-image img-responsive center-block pull-right" src="/static/img/M3-nickel-square.jpg" title="Pressure Qube on US nickel" alt="A picture of an Pressure Qube on the edge of a US nickel" />
+      </div>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-6 col-md-push-6">
+      <h2 class="featurette-heading">Redefining Ultra-Low Power. <span class="text-muted">Enabling perpetual computing.</span></h2>
+      <p class="lead">
+      CubeWorks' systems average a record-setting <strong>8&nbsp;nW</strong>
+      power draw in standby mode. In indoor ambient light, the
+      1&nbsp;mm<sup>2</sup> solar cell produces 10&nbsp;nW, facilitating
+      perpetual operation.
+      </p>
+    </div>
+    <div class="col-md-1 col-md-push-5 sm-hidden"></div>
+    <div class="col-md-5 col-md-pull-7">
+      <img class="featurette-image img-responsive center-block" src="/static/img/chip_array.png" alt="Array of CubeWorks chips and features.">
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">From the Internet of Things... <span class="text-muted">to the Internet of Everything.</span></h2>
+      <p class="lead">
+      The small form factor, wireless capability, and long lifetime of Cubisens
+      makes it an ideal platform for realizing ubiquitous computing. The
+      first-generation systems are equipped with imaging, motion detection,
+      temperature sensing, and pressure sensing. CubeWorks aims to expand the
+      breadth of applications and position its Cubisens technology as pivotal
+      for realizing the impending Internet of Everything.
+      </p>
+    </div>
+    <div class="col-md-5">
+      <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="NEED IMAGE HERE">
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <!-- /END THE FEATURETTES -->
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="pull-right"><a href="#">Back to top</a></p>
+    <p>&copy; 2015 CubeWorks</p>
+  </footer>
+
+</div><!-- /.container -->
+
+
+{% endblock %}
+
