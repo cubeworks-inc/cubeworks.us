@@ -17,6 +17,22 @@ body {
   margin: 0 auto;
 }
 
+.btn-wrap {
+  white-space: normal;
+}
+
+.btn-big {
+  font-size: 4vw;
+  padding: 3vw 2vw;
+}
+
+@media (min-width: 768px) {
+  .btn-big {
+    font-size: 24px;
+    padding: 36px 24px;
+  }
+}
+
 .top-buffer {
   margin-top: 20px;
 }
