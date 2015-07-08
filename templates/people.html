@@ -21,103 +21,45 @@ CubeWorks :: People
     </p>
   </div>
 
+  {% macro person(name, img=None, title=None) -%}
+    <div class="col-lg-6">
+      <div class="row">
+        <div class="col-lg-4">
+          {% if img %}
+          <img class="img-circle" src="/static/img/{{ img }}" width="140px" />
+          {% else %}
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="140px" />
+          {% endif %}
+        </div>
+        <div class="col-lg-8">
+          <h2>{{ name }}</h2>
+          {% if title %}<h3>{{ title }}</h3>{% endif %}
+        </div>
+      </div>
+    </div>
+  {%- endmacro %}
+
+
   <div class="row top-buffer">
-    <div class="col-lg-6">
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="/static/img/zhiyoong-square.png" width="140px" />
-        </div>
-        <div class="col-lg-8">
-          <h2>ZhiYoong Foo</h2>
-          <h3>CEO, Co-Founder</h3>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6">
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="/static/img/gyouho-square.jpg" width="140px" />
-        </div>
-        <div class="col-lg-8">
-          <h2>Gyouho Kim</h2>
-          <h3>CTO, Co-Founder</h3>
-        </div>
-      </div>
-    </div>
+    {{ person('ZhiYoong Foo', 'zhiyoong-square.png', 'CEO') }}
+    {{ person('Gyouho Kim', 'gyouho-square.jpg', 'CTO') }}
   </div>
   <div class="row top-buffer">
-    <div class="col-lg-6">
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="140px" />
-        </div>
-        <div class="col-lg-8">
-          <h2>Yejoong Kim</h2>
-          <h3>CRO</h3>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6">
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="/static/img/pannuto-square.jpg" width="140px" />
-        </div>
-        <div class="col-lg-8">
-          <h2>Pat Pannuto</h2>
-          <h3>Principal Systems Architect</h3>
-        </div>
-      </div>
-    </div>
+    {{ person('Yejoong Kim', None, 'CRO') }}
+    {{ person('Pat Pannuto', 'pannuto-square.jpg', 'Principal Systems Architect') }}
   </div>
   <hr />
-  <h2>Advisory Board</h2>
+  <h2>Co-Founders</h2>
   <div class="row top-buffer">
-    <div class="col-lg-6">
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="/static/img/blaauw-square.jpg" width="140px" />
-        </div>
-        <div class="col-lg-8">
-          <h2>David Blaauw</h2>
-          <h3>Principal Adivsor, Co-Founder</h3>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6">
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="/static/img/dennis-square.jpg" width="140px" />
-        </div>
-        <div class="col-lg-8">
-          <h2>Dennis Sylvester</h2>
-          <h3>Title?</h3>
-        </div>
-      </div>
-    </div>
+    {{ person('David Blaauw', 'blaauw-square.jpg') }}
+    {{ person('Prabal Dutta', 'prabal-square.jpg') }}
   </div>
   <div class="row top-buffer">
-    <div class="col-lg-6">
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="/static/img/wentzloff-square.jpg" width="140px" />
-        </div>
-        <div class="col-lg-8">
-          <h2>David Wentzloff</h2>
-          <h3>Title?</h3>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6">
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="/static/img/prabal-square.jpg" width="140px" />
-        </div>
-        <div class="col-lg-8">
-          <h2>Prabal Dutta</h2>
-          <h3>Title?</h3>
-        </div>
-      </div>
-    </div>
+    {{ person('Yoonmyung Lee') }}
+    {{ person('Dennis Sylvester', 'dennis-square.jpg') }}
+  </div>
+  <div class="row top-buffer">
+    {{ person('David Wentzloff', 'wentzloff-square.jpg') }}
   </div>
 </div>
 
