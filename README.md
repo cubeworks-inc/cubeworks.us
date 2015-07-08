@@ -15,6 +15,12 @@ The makefile should do all the heavy lifting, with the makefile you can:
     Be careful with this, it takes effect immediately.
 
 
+### Resources
+
+For things that you want on the live website, place them in `templates/static/{folder}/{file}`.
+Only put files that should be available online inside of the `templates` folder. For things
+like full-resoultion images, gimp/photoshop files, use the `resources` folder.
+
 ## Pre-requisites
 
 You'll need to install a few python packages:
